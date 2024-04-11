@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto-detalhes {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .produto-detalhes img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .descricao {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .descricao h2 {
+            margin-top: 0;
+        }
+
+        .opcoes {
+            margin-top: 20px;
+        }
+
+        .opcoes label {
+            font-weight: bold;
+        }
+
+        .opcoes select {
+            margin-bottom: 10px;
+        }
+
+        .opcoes button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .opcoes button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333; /* cinza escuro */
+            color: #fff; /* branco */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .estrelas {
+            unicode-bidi: bidi-override;
+            color: #ccc;
+            font-size: 40px;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .estrelas > span:hover:before,
+        .estrelas > span:hover ~ span:before {
+            content: "\2605";
+            position: absolute;
+            color: #ffcc00;
+        }
+
+        .estrelas > span:hover:before {
+            content: "\2605";
+        }
+
+        .estrelas > span:before {
+            content: "\2606";
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Detalhes do Produto</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="produto-detalhes">
+        <img src="assets/images/tee_kidz_glitch_black-23f68ba6871653f0a216965386950658-480-0.jpg" alt="Produto" idth="200" height="250" >
+        <div class="descricao">
+            <h2>Nome do Produto</h2>
+            <p>Descrição do produto...</p>
+            <p>Preço: R$ 99,99</p>
+            <div class="opcoes">
+                <label for="cor">Cor:</label>
+                <select id="cor" name="cor">
+                    <option value="branca">Branca</option>
+                    <option value="preta">Preta</option>
+                    <option value="azul">Azul</option>
+                    <option value="vermelha">Vermelha</option>
+                </select>
+                <br>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <br>
+                <button type="button">Adicionar ao Carrinho</button>
+            </div>
+            <div class="estrelas">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+            </div>
+        </div>
+    </div>
+        <section id="promocoes">
+             <h2>Promoções Especiais</h2>
+             <p>Aproveite nossas promoções especiais!</p>
+             <p>Desconto de 10% em todos os produtos utilizando o código promocional: <strong>PROMO10</strong></p>
+         </section>
+
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+        
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Loja de Roupas Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html

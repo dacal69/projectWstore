@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* branco */
+            color: #333; /* cinza escuro */
+        }
+
+        header {
+            background-color: #333; /* cinza escuro */
+            color: #fff; /* branco */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* branco */
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333; /* cinza escuro */
+        
+        }
+        
+        .produto {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9; /* cinza claro */
+            border-radius: 5px;
+
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="email"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* cinza claro */
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333; /* cinza escuro */
+            color: #fff; /* branco */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555; /* cinza médio */
+        }
+
+        footer {
+            background-color: #333; /* cinza escuro */
+            color: #fff; /* branco */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo à White Store</h1>
+
+        <nav>
+            <form action="#">
+                <input type="text" placeholder="Buscar...">
+            </form>
+        </nav>
+
+        <br>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#lançamentos">Lançamentos</a></li>
+                <li><a href="#contato">Coleções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de Destaques -->
+        <section id="destaques">
+            
+            <h2>PRODUTOS EM DESTAQUES</h2>
+
+            <div class="produto">
+                <img src="using/image/tee_kidz_glitch_black-23f68ba6871653f0a216965386950658-480-0.jpg" alt="Produto 1" width="300" height="310">
+                    <h3>
+                        <nav>
+                        <a href="entrada.html">CAMISETA HIGH KIDZ GLITCH BLACK</a>
+                        </nav>
+                    </h3>
+                        <p>Camiseta / Masculinas /  High Company</p>
+                        <p>Preço: R$ 167,99 <del>R$ 239,99</del></p>
+            </div>
+
+            <div class="produto">
+                <img src="using/image/3vloshibxnxh4zepdfadnmz3qucqtcjjlfc5_1080x1080+fill_ffffff.jpg" alt="Produto 2" width="300" height="310">
+                    <h3>
+                        <nav>
+                            <a href="#produto">CAMISETA HIGH KIDZ BLACK/PURPLE</a> 
+                        </nav> 
+                    </h3>
+                        <p>Camiseta / Masculinas /  High Company</p>
+                        <p>Preço: R$ 167,99 <del>R$ 239,99</del></p>
+            </div>
+
+        </section>
+
+        <!-- Seção de Categorias -->
+        <section id="categorias">
+            <h2>Categorias dos nossos produtos</h2>
+            <ul>
+                <li>Camisetas</li>
+                <li>Calças</li>
+                <li>Bermudas</li>
+                <li>Moletons</li>
+            </ul>
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Seção de Promoções -->
+        <section id="promocoes">
+            <h2>Promoções Especiais</h2>
+            <p>Aproveite nossas promoções especiais!</p>
+            <p>Desconto de 30% em todos os produtos utilizando o cupom: <strong>PROMO30</strong></p>
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Formulário de Contato -->
+        <section id="contato">
+            <h2>Cadastre-se</h2>
+            <form action="#" method="post">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="data_pedido">Data do Pedido:</label>
+                <input type="date" id="data_pedido" name="data_pedido" required>
+
+                <label for="senha">Senha de Autorização:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Para mais informações, entre em contato através do telefone: <strong>(13) 99424-9080</strong></p>
+            <p>Siga-nos nas redes sociais: <a href="https://www.facebook.com/suaempresa">Facebook</a> | <a href="https://twitter.com/suaempresa">Twitter</a> | <a href="https://www.instagram.com/suaempresa">Instagram</a></p>
+        </section>
+    </main>
+            <br>
+            <br>
+            <br>
+            <br>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 White Store</p>
+    </footer>
+</body>
+</html>
